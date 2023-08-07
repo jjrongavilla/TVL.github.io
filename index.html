@@ -35,7 +35,7 @@
                 </header>
                 
                 <section class="box">  
-                    <video src="./bg vids/videoplayback (1).webm" autoplay muted loop></video>
+                    <video src="./bg vids/pexels-fearless-dreams-5598972 (1080p).mp4" autoplay muted loop></video>
                     <h1>Twin Vision Logistics</h1> 
                     <h3>We are here for all of your trucking needs</h3>
                     <a href="#contact" class="boxBtn">Book An Appointment</a>
@@ -68,7 +68,7 @@
                           <h2 class="section-heading" style="color: #920000;">Our Services</h2>
                           <p class="text-solution text-body-emphasis">Freight solutions</p>
                       </div>
-           <div class="row">
+           <div class="row reveal">
                       <div class="column">
                           <div class="servicecard">
                               <div class="icon-wrapper">
@@ -254,6 +254,33 @@
   }
 
   window.addEventListener('scroll', changeColor);
+
+  var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-110px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+  function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
+
+    for(var i = 0; i < reveals.length; i++){
+
+      var windowheight = window.innerHeight;
+      var revealtop = reveals[i].getBoundingClientRect().top;
+      var revealpoint = 150;
+
+      if(revealtop < windowheight - revealpoint){
+        reveals[i].classList.add('active');
+      } 
+    }
+  }
+  window.addEventListener('scroll', reveal);
 
 </script>
 

@@ -58,8 +58,10 @@ header a {
 }
 
 .fColor {
-  color: black;
-  text-shadow: 0 3px 3px rgba(55, 162, 233, 0.5);
+  color: #3d3d3d;
+  /* color: #000; */
+  text-shadow: 0 3px 3px rgba(18, 18, 19, 0.329);
+  background-color: #4db2f58f;
 }
 
 header ul li::after {
@@ -171,16 +173,23 @@ header .nav li:last-child {
 }
 
 /* About Section */
-body{
+/* body{
+  background-image: url(./assets/back\ ground.jpg);
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: #5781a8; */
-	/* background-color: #0c477c; */
-  background-image: url(./assets/back\ ground.jpg);
   background-attachment: fixed;
   background-size: cover;
+} */
+#about {
+  background-image: url(./assets/back\ ground.jpg);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+background-attachment: fixed;
+background-size: cover;
 }
 
 .about-section{
@@ -368,9 +377,25 @@ body{
 	max-width: 33.33%;
 	}
   }
+
+  /*our services class selector for javascript */
+  .reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+  }
+
+  .reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  /* our services class selector for javascript */
+  
   /* our services */
 
   /* certifications */
+
   /* #section-page{
     background-image: url(./assets/back\ ground.jpg);
     background-repeat: no-repeat;
