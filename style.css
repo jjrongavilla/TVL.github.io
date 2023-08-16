@@ -58,8 +58,8 @@ header a {
 }
 
 .fColor {
-  color: #3d3d3d;
-  /* color: #000; */
+  /* color: #3d3d3d; */
+  /* color: #e7e9ee; */
   text-shadow: 0 3px 3px rgba(18, 18, 19, 0.329);
   background-color: #4db2f58f;
 }
@@ -183,7 +183,7 @@ header .nav li:last-child {
   background-size: cover;
 } */
 #about {
-  background-image: url(./assets/back\ ground.jpg);
+  background-color: #074e9a;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -224,15 +224,19 @@ background-size: cover;
     margin-bottom: 40px;
 }
 .button-read{
-    border: solid 1px #000;
-    background-color: #b6cee0;
+    /* border: solid 1px #000; */
+    /* background-color: #b6cee0; */
+    border: solid 1px #0A5891;
+    background-color: #0A5891;
+    color: white;
     width: 100px;
     height: 30px;
     font-family: 'Poppins', sans-serif;
     border-radius: 7px;
 }
 .button-read:hover{
-    background-color: #44aedf;
+    background-color: #d4dadd;
+    color: #000;
 }
 
 
@@ -266,13 +270,13 @@ background-size: cover;
 }
 
 .background {
-    background-image: url(./assets/back\ ground.jpg);
-    /* background-image: url(./assets/pexels-david-skyrius-2129796.jpg); */
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* background-image: url(/assets/background\ dark.jpg); */
+  background-color: #286c9c;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
     
 }
 @media only screen and (max-device-width: 1200px) {
@@ -307,7 +311,7 @@ background-size: cover;
 	border-radius: 8px;
 	background-color: rgba(255, 255, 255, 0.5);
 	backdrop-filter: blur(20px);
-	box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 1px 12px rgba(105, 104, 104, 0.404);
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	cursor: pointer;
 	transition: 0.5s;
@@ -316,13 +320,14 @@ background-size: cover;
 	font-size: 45px;
 	font-weight: 600;
 	color: #000;
+  text-shadow: 0 4px 3px rgba(0, 20, 0, 0.274);
 	/* margin-top: -80px; */
 	padding-top: 30px;
   }
   h3 {
 	font-size: 25px;
 	font-weight: 600;
-	color: #2f3b41;
+	color: #171a1c;
 	margin: 1em 0;
   }
   p {
@@ -333,7 +338,7 @@ background-size: cover;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   .icon-wrapper {
-	background-color: #0c477c;
+	background-color: #920000;
 	margin: auto;
 	font-size: 30px;
 	height: 2.5em;
@@ -405,7 +410,7 @@ background-size: cover;
     border-radius: 5px;
 	background-color: rgba(255, 255, 255, 0.5);
 	backdrop-filter: blur(20px);
-	box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 1px 12px rgba(39, 39, 39, 0.25);
 	border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -538,7 +543,7 @@ background-size: cover;
     display: inline-block;
     margin-top: 12px;
   }
-  .right-side .button input[type="button"] {
+  .right-side .button {
     color: #fff;
     font-size: 18px;
     outline: none;
@@ -549,7 +554,7 @@ background-size: cover;
     cursor: pointer;
     transition: all 0.3s ease;
   }
-  .button input[type="button"]:hover {
+  .button:hover {
     background: #920000;
   }
 
@@ -601,5 +606,7 @@ background-size: cover;
       /* padding-right: 10px; */
     }
 }
+
+
   /* footer */
   
