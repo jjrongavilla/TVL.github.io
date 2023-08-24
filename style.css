@@ -183,27 +183,31 @@ header .nav li:last-child {
   background-size: cover;
 } */
 #about {
-  background-color: #074e9a;
+  background-color: #096fdbbe;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-background-attachment: fixed;
-background-size: cover;
+
+
 }
 
 .about-section {
-    background: url(imgs/e3.jpg) no-repeat left;
-    background-size: 55% 100%;
+   
+    background: url(./assets/truck/pexels-carloscruz-artegrafia-11087837.jpg) no-repeat;
+    background-size: 60% 100%;
+    background-attachment: fixed;
     overflow: hidden;
-    padding: 150px 0;
+    padding: 130px 0;
 }
 
 .inner-container{
     width: 60%;
     float: right;
     border-radius: 10px 0 0 10px;
-    background-color: #b0d2ee;
+    background-color: rgba(176, 210, 238, 0.822);
+    box-shadow: 0 1px 12px rgba(68, 68, 68, 0.404);
+	  border: 1px solid rgba(255, 255);
     /* background-image: url(./assets/back\ ground.jpg); */
     /* background-repeat: no-repeat; */
     background-size: cover;
@@ -247,6 +251,10 @@ background-size: cover;
 
     .inner-container h1 {
       padding-top: 60px;
+    }
+
+    .about-section {
+      background-image: none;
     }
 }
 
@@ -415,31 +423,12 @@ background-size: cover;
   position: relative;
 }
 
-.text-center{
+/* .text-center{
     font-size: 50px;
     font-weight: bold;
-}
+} */
 
-.pending {
-  position: absolute;
-  /* color: #960018; */
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: bold;
-  left: 129px;
-  top: 75%;
-}
 
-@media screen and (max-width:720px) {
-  .pending {
-    left: 165px;
-  }
-}
-@media screen and (max-width:400px) {
-  .pending {
-    left: 115px;
-  }
-}
   /* certifications */
 
 /* Contact Section */
